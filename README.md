@@ -9772,12 +9772,12 @@ In member function ‘void std::__new_allocator<_Tp>::deallocate(_Tp*, size_type
 ...skipped 39 targets...
 ...updated 15917 targets...
 ```
-# 9. Перенесите все скомпилированные на предыдущем шаге статические библиотеки в директорию ~/boost-libs.
+## 9. Перенесите все скомпилированные на предыдущем шаге статические библиотеки в директорию ~/boost-libs.
 ```bash
 mkdir ~/boost-libs
 find ~/boost_1_69_0/stage/lib -name "*.a" -exec mv {} ~/boost-libs/ \;
 ```
-# 10. Подсчитайте сколько занимает дискового пространства каждый файл в этой директории.
+## 10. Подсчитайте сколько занимает дискового пространства каждый файл в этой директории.
 ```bash
 ubuntu@ubuntu:~/boost-libs$ cd ~/boost-libs
 ubuntu@ubuntu:~/boost-libs$ du -b *
@@ -9816,7 +9816,7 @@ ubuntu@ubuntu:~/boost-libs$ du -b *
 4695006 libboost_wave.a
 811770 libboost_wserialization.a
 ```
-# 11. Найдите топ10 самых "тяжёлых".
+## 11. Найдите топ10 самых "тяжёлых".
 ```bash
 ubuntu@ubuntu:~/boost-libs$ du -b * | sort -rn | head -10
 ```
@@ -9832,3 +9832,4 @@ ubuntu@ubuntu:~/boost-libs$ du -b * | sort -rn | head -10
 1225992 libboost_serialization.a
 865128 libboost_graph.a
 ```
+
