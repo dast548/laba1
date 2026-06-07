@@ -1855,6 +1855,7 @@ ubuntu@ubuntu:~$ grep -rl "boost::asio" ~/boost_1_69_0/
 /home/ubuntu/boost_1_69_0/boost/asio/detail/impl/descriptor_ops.ipp
 /home/ubuntu/boost_1_69_0/boost/asio/detail/impl/buffer_sequence_adapter.ipp
 ```
+</details>
 # 8. Скомпилирутйе boost. Можно воспользоваться инструкцией или ссылкой.
 ```bash
 sudo apt update
