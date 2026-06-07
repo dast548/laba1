@@ -90,6 +90,10 @@ ubuntu@ubuntu:~$ find ~/boost_1_69_0 -type f -name "any.hpp"
 ```bash
 ubuntu@ubuntu:~$ grep -rl "boost::asio" ~/boost_1_69_0/
 ```
+
+<details>
+<summary>Вывод команды (нажмите чтобы раскрыть)</summary>
+
 ```bash
 /home/ubuntu/boost_1_69_0/doc/html/process/reference.html
 /home/ubuntu/boost_1_69_0/doc/html/boost/process/spawn.html
@@ -1853,9 +1857,10 @@ ubuntu@ubuntu:~$ grep -rl "boost::asio" ~/boost_1_69_0/
 /home/ubuntu/boost_1_69_0/boost/asio/detail/impl/dev_poll_reactor.ipp
 /home/ubuntu/boost_1_69_0/boost/asio/detail/impl/dev_poll_reactor.hpp
 /home/ubuntu/boost_1_69_0/boost/asio/detail/impl/descriptor_ops.ipp
-/home/ubuntu/boost_1_69_0/boost/asio/detail/impl/buffer_sequence_adapter.ipp
 ```
+
 </details>
+
 # 8. Скомпилирутйе boost. Можно воспользоваться инструкцией или ссылкой.
 ```bash
 sudo apt update
@@ -1866,6 +1871,10 @@ ls -l | grep "bootstrap"
 ./bootstrap.sh --prefix=/usr/local
 sudo ./b2 -j4 install
 ```
+
+<details>
+<summary>Вывод команды (нажмите чтобы раскрыть)</summary>
+
 ```bash
                  from /usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h:205,
                  from /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h:7,
@@ -9773,6 +9782,9 @@ In member function ‘void std::__new_allocator<_Tp>::deallocate(_Tp*, size_type
 ...skipped 39 targets...
 ...updated 15917 targets...
 ```
+
+</details>
+
 ## 9. Перенесите все скомпилированные на предыдущем шаге статические библиотеки в директорию ~/boost-libs.
 ```bash
 mkdir ~/boost-libs
